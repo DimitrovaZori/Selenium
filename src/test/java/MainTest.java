@@ -100,7 +100,7 @@ public class MainTest {
         editFrank.click();
         }
 
-    }
+    
 
     @AfterMethod
     public void tearDown() {

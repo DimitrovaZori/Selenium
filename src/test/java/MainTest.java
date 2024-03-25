@@ -96,7 +96,8 @@ public class MainTest {
     @Test
     public void dataTable() {
         driver.get("https://the-internet.herokuapp.com/tables");
-        WebElement editFrank = driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[2]/td[6]/a[1]"));
+        WebElement editFrank = driver.findElement(By.xpath("//table[@id='table1']//tr[contains(text(), Frank)]/td/a[contains(text(), 'edit')]"));
+       // WebElement editFrank = driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[2]/td[6]/a[1]"));
         editFrank.click();
         }
 
